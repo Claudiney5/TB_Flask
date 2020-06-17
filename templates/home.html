@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+	Exoplanetas
+{% endblock %}
+
+{% block link %}		
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/home.css') }}">
+ {% endblock %}
+
+
+{% block content %}
+	<div class="main">
+		
+		<h1>Exoplanetas</h1>
+		<h2>Dados, estudos, produção científica, arte, imagens e muito mais</h2>
+
+		<div class="container">
+			<div class='content'>
+				<h2>11 COMAE BERENICES B</h2>
+				<img src="{{ url_for('static', filename='img/11_coma_b.jpg') }}">
+			</div>
+		</div>
+		
+	</div>
+{% endblock %}
